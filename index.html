@@ -2,28 +2,138 @@
 <html>
 <head>
     <title>Conference Event</title>
+    <style>
+    
+    body{
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5e5;
+    }
+    .container{
+        background-color: #333;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .items{
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+
+    h1{
+        text-align: center;
+        color: blue;
+        font-family: cursive;
+        margin-top: 30px;
+    }
+
+    h2{
+        text-align: center;
+        color: #555;
+    }
+
+    .nav{
+        background-color: #333;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .nav a{
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .nav a:hover{
+        color: #ff9800;
+    }
+
+    .section{
+        background-color: white;
+        padding: 20px;
+        margin: 20px 0;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        border-radius: 5px;
+    }
+
+    .sectin img{
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    p{
+        line-height: 1.6;
+        font-size: 16px;
+    }
+
+    .footer{
+        text-align: center;
+        padding: 20px 0;
+        color: #aaa;
+        font-size: 14px;
+    }
+
+    .video-section{
+        background-color: #ffffff;
+        padding: 30px;
+        margin: 30px auto;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .video-section :hover{
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .video-section h3{
+        color: #2c3e50;
+        font-size: 24px;
+        margin-top: 20px;
+    }
+
+    .video-section iframe{
+        width: 100%;
+        max-width: 720px;
+        height: 405px; /* 16:9 aspect ratio */
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    }
+        
+    </style>
 </head>
 <body>
     
-    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="container">
        <b>
-        <a href="index.html">Home</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="pages/about.html">About</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="pages/speakers.html">Speakers</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="pages/schedule.html">Schedule</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="pages/venue.html">Venue</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="pages/sponsors.html">Sponsors</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="pages/gallery.html">Gallery</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="pages/register.html">Register</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="pages/contact.html">Contact</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      </b><hr /><hr />
+        <a href="index.html" class="items">Home</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="pages/about.html"  class="items">About</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="pages/speakers.html" class="items">Speakers</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="pages/schedule.html" class="items">Schedule</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="pages/venue.html" class="items">Venue</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="pages/sponsors.html" class="items">Sponsors</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="pages/gallery.html" class="items">Gallery</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="pages/register.html" class="items">Register</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="pages/contact.html" class="items">Contact</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </b>
     </div>
 
     <h1>Welcome to Global Tech Conference</h1>
 
     <h2>Join the Biggest Tech Conference of the year</h2>
 
-    <div>
+    <div class="section">
         <img src="./images/main-conference.jpg" alt="Conference" height="300px" />
         <p>
             The Global Tech Conference 2025 is the premier event for technology enthuasiasts, industry leaders, & innovators from around the world. This year, we bring together experts in artificial intelligence, cybersecurity, blockchain, cloud computing, & more. Attendees will have the opportunity to engage in insightful panel discussions, hands-on workshops, and networking sessions with top professionals. Whether you are are a startup founder, a seasoned developer, or a technology enthuasiasts, this conference provides an excellent platform to learn, connect, & explore the latest trends shaping the future of technology. Don't miss the chance to gain valuable insights, discover groundbreaking solutions, & be a part of the revolution that will define the next era of innovation.
@@ -34,43 +144,41 @@
     <h2>Why Attend?</h2>
     </div>
 
-    <div>
+    <div class="section">
         <img src="./images/industry.jpg" alt="Industry" height="80px" />
         <p>
             "Gaining insights from top experts in the tech industry" refers to obtaining knowledge, opinions, and advice from leading figures or professionals who are recognized as authorities in technology. These experts typically have extensive experience, innovation, and success in various tech fields such as software development, cybersecurity, AI, data science, hardware engineering, and more.
         </p>
-        <hr />
         <br />
     </div> 
     
-    <div>
+    <div class="section">
         <img src="./images/workshop.jpg" alt="Workshop" height="80px" />
         <p>
             "Participating in hands-on workshops and interactive sessions" means actively engaging in practical learning experiences, where you apply concepts in real-time rather than just passively consuming information. These activities typically involve direct interaction, problem-solving, and collaboration with others, making the learning process more dynamic and effective.
         </p>
-        <hr />
         <br />
     </div>
 
-    <div>
+    <div class="section">
         <img src="./images/business-opportunity.jpg" alt="Business-opportunity" height="80px" />
         <p>
             "Networking with professionals and expanding your business opportunities" refers to the process of building relationships with others in your industry to create potential business prospects, collaborations, or growth opportunities. By connecting with other professionals, you can exchange ideas, share expertise, and open doors to new ventures, partnerships, or clients. 
         </p>
-        <hr />
         <br />
     </div>
 
-    <div>
+    <div class="section">
         <img src="./images/innovation.jpg" alt="Innovation-technology" height="80px" />
         <p>
             "Experience the latest innovations in technology" means engaging with the newest and most cutting-edge developments in the tech world. This could involve interacting with or learning about the latest devices, software, tools, and systems that push the boundaries of what's possible in fields like AI, robotics, virtual reality, blockchain, biotechnology, and more.
         </p>
-        <hr />
         <br />
     </div>
-
+    
+    <div class="video-section">
     <iframe width="360" height="215" src="https://www.youtube.com/embed/BOG_CbEDhag?si=7MmDFR-m2_NBsv7F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
     <h3>Don't miss out!</h3>
 
