@@ -6,71 +6,184 @@
     <title>Conference Sponsors</title>
 </head>
 <style>
-    *{
-        /* padding:1px; */
-    }
-    body{
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f5f5f5fc;
-    }
-    
-    .container{
-        background-color: #ead9d9;
-        padding: 10px 0;
-        text-align: center;
-        color:aqua;
-        position:sticky;
-        top:0;
-    }
-    h3{
-        font-weight: 9px;
-        font-size: 30px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color:#53095c
-    }
-    h3:hover{
-        font-size:40px;
-        color:rgb(160, 93, 5);
-    }
-    button{
-    /* position:sticky; */
-    bottom: 0;
-    padding:9px;
-    font-weight: 700;
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+} 
+.container {
+    background-color: #4a4a4a; /* Dark Gray Background */
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container a {
+    text-decoration: none;
+    color: white; /* White Text */
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.container a:hover {
+    color: #ff6600; /* Orange on Hover */
+}
+
+
+h1 {
+    color: blue;
+    font-family: cursive;
+    margin: 20px 0;
+}
+
+h2 {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #53095c;
+    margin: 20px 0;
+}
+
+h3:hover {
+    font-size: 35px;
+    color: rgb(160, 93, 5);
+}
+
+h4 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+button {
     background-color: rgb(211, 169, 250);
-    border-radius: 30%;
-    }
-    h1{
-        text-align: center;
-        color: blue;
-        font-family: cursive;
-        margin-top: 30px;
-    }
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-    h2{
-        text-align: center;
-        color: #555;
-    }
-    h4{
-        text-align: center;
-        font-size: 20px;
-    }
-    .video-section{
-        background-color: #ffffff;
-        padding: 30px;
-        margin: 30px auto;
-        max-width: 800px;
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+button a {
+    text-decoration: none;
+    color: #000;
+}
 
-    .video-section :hover{
-        transform: translateY(-5px);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+button:hover {
+    background-color: #9c6ef2;
+}
+
+/* Sponsor Section */
+.sponsor-table {
+    margin: 20px auto;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.sponsor-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsor-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.sponsor-box img {
+    width: 150px;
+    height: auto;
+}
+
+.video-section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #777;
+}
+/* Keyframe for Navbar Entrance Animation */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
     }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Keyframe for Hover Animation */
+@keyframes hoverBounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Navbar Styling */
+.container {
+    background-color: #4a4a4a; /* Dark Gray Background */
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    animation: slideDown 0.7s ease-in-out; /* Apply Entrance Animation */
+}
+
+/* Navigation Links */
+.container a {
+    text-decoration: none;
+    color: white; /* White Text */
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect with Keyframes */
+.container a:hover {
+    color: #ff6600; /* Orange on Hover */
+    animation: hoverBounce 0.3s ease
+
 
 </style>
 <body>
@@ -160,3 +273,65 @@
 
 </body>
 </html>
+ <!-- body{
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5fc;
+    }
+    
+    .container{
+        background-color: #ead9d9;
+        padding: 10px 0;
+        text-align: center;
+        color:aqua;
+        position:sticky;
+        top:0;
+    }
+    h3{
+        font-weight: 9px;
+        font-size: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:#53095c
+    }
+    h3:hover{
+        font-size:40px;
+        color:rgb(160, 93, 5);
+    }
+    button{
+    /* position:sticky; */
+    bottom: 0;
+    padding:9px;
+    font-weight: 700;
+    background-color: rgb(211, 169, 250);
+    border-radius: 30%;
+    }
+    h1{
+        text-align: center;
+        color: blue;
+        font-family: cursive;
+        margin-top: 30px;
+    }
+
+    h2{
+        text-align: center;
+        color: #555;
+    }
+    h4{
+        text-align: center;
+        font-size: 20px;
+    }
+    .video-section{
+        background-color: #ffffff;
+        padding: 30px;
+        margin: 30px auto;
+        max-width: 800px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .video-section :hover{
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    } -->
