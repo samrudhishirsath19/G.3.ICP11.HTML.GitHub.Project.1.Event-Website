@@ -2,24 +2,65 @@
 <html lang="en">
 <head>
    <title>Register Page</title>
+   <style>
+     
+     body{
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 0;
+        
+     }
+
+    .box1 {
+      color: blue;
+      text-align: center;
+      font-family: cursive ;
+      background-color:rgb(230, 226, 226);
+      padding: 5px;
+      margin: 0;
+    }
+   
+  .h3 {
+    text-align: center;
+    color: #3f3b3b;
+  }
+  .container1{
+    background-color: rgb(43, 41, 41);
+   color: #ffffff;
+   padding: 10px 0;
+   text-align: center;
+  }
+
+  .items{
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+   </style>
 </head>
 <body>
     <form>
-        <h1 style="text-align: center;">Conference Online Registration</h1>
-    <u><h3 style="text-align: center;">Please fill in the form below. We'll contact you as soon as possible.</h3></u>
-<hr> <hr> <br> 
-        <div class="venue-container">
-      <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <b><a href="./../index.html">Home</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <a href="speakers.html">Speakers</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <a href="schedule.html">Schedule</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <a href="venue.html">Venue</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <a href="sponsors.html">Sponsors</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <a href="gallery.html">Gallery</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <a href="register.html">Register</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           <a href="contact.html">Contact</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         </b> <br> <br><hr /><hr />
-       </div>
+      <div class="container1">
+        <b>
+          <a href="./../index.html" class="items" >Home</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="speakers.html" class="items" >Speakers</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="schedule.html" class="items">Schedule</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="venue.html" class="items">Venue</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="sponsors.html"class="items">Sponsors</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="gallery.html" class="items">Gallery</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="register.html" class="items">Register</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <a href="contact.html" class="items">Contact</a>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       </b>  </div>
+
+      <div class="box1">
+        <h1>Conference Online Registration</h1>
+    <h3 class="h3">Please fill in the form below. We'll contact you as soon as possible.</h3>
+  </div>
+
+       
+       
        <img src="../images/Person.png" height="15px">
         <label for="name" id="name"><b>Full Name :-</b></label> <br> <br>
         <input type="text" id="name" placeholder="First name" required> 
